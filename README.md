@@ -1,16 +1,49 @@
-# React + Vite
+# ZaneGraper Portfolio (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is configured to deploy to **GitHub Pages** as a project site:
 
-Currently, two official plugins are available:
+- Site URL: `https://zgraper.github.io/ZaneGraper/`
+- Vite base path: `/ZaneGraper/` (`vite.config.js`)
+- SPA routing: `HashRouter` (works on GitHub Pages without server rewrites)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Local development
 
-## React Compiler
+```bash
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Production build
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## GitHub Pages deployment
+
+This repository includes an Actions workflow at `.github/workflows/deploy.yml` that builds and deploys `dist/`.
+
+### Required GitHub setting
+
+In your repository:
+
+1. Go to **Settings → Pages**
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**
+
+If Pages is set to **Deploy from a branch** (for example `main`), GitHub will serve the raw `index.html` source file (which points to `/src/main.jsx`) and you will get a blank white page.
+
+## Troubleshooting white screen / MIME errors
+
+If DevTools shows errors like:
+
+- `Loading module ... /src/main.jsx ... disallowed MIME type (“text/html”)`
+- `GET ... /favicon.svg 404`
+
+then GitHub Pages is serving source files instead of the Vite build output.
+
+### Fix
+
+- Switch Pages source to **GitHub Actions**
+- Push to `main` to trigger deployment
+- Confirm the deployed HTML references `/ZaneGraper/assets/...` (not `/src/main.jsx`)
