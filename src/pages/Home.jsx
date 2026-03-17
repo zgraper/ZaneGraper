@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import profile from '../data/profile';
 import projects from '../data/projects';
+import { experience } from '../data/experience';
 import './Home.css';
 
 const focusAreas = [
@@ -24,6 +25,16 @@ const focusAreas = [
     title: 'Full-Stack Development',
     description: 'React front-ends, Python APIs, and AWS cloud infrastructure at production scale.',
   },
+  {
+    icon: '📋',
+    title: 'Project Management',
+    description: 'Certified PMP/CAPM practitioner with MBA focus on agile delivery and strategic execution.',
+  },
+  {
+    icon: '🌾',
+    title: 'Agriculture',
+    description: 'Deep expertise in agronomy, grain supply chains, food processing, and ag-tech innovation.',
+  },
 ];
 
 const featuredProjects = projects.slice(0, 4);
@@ -44,6 +55,28 @@ function Home() {
               Download Resume
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* Experience Quick Peek */}
+      <section className="section experience-peek-section">
+        <h2 className="section-title">Experience Highlights</h2>
+        <div className="exp-peek-list">
+          {experience.map((job) => (
+            <div key={job.id} className="exp-peek-item">
+              {job.logo && (
+                <img src={job.logo} alt={`${job.company} logo`} className="exp-peek-logo" />
+              )}
+              <div className="exp-peek-info">
+                <p className="exp-peek-role">{job.role}</p>
+                <p className="exp-peek-company">{job.company}</p>
+              </div>
+              <span className="exp-peek-period">{job.period}</span>
+            </div>
+          ))}
+        </div>
+        <div className="featured-footer">
+          <Link to="/experience" className="btn btn-outline">Full Experience →</Link>
         </div>
       </section>
 

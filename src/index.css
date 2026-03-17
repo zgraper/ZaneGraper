@@ -27,9 +27,12 @@
   --text-4xl: 2.25rem;
 
   /* Colors */
-  --color-brand: #16a34a;
-  --color-brand-dark: #15803d;
-  --color-brand-light: #dcfce7;
+  --color-brand: #1e3a8a;
+  --color-brand-dark: #1a2f73;
+  --color-brand-light: #dbeafe;
+  --color-accent: #dc6414;
+  --color-accent-dark: #b84e0a;
+  --color-accent-light: #fde8d4;
   --color-text-primary: #0f172a;
   --color-text-secondary: #334155;
   --color-text-muted: #64748b;
