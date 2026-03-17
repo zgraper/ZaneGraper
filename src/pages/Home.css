@@ -4,10 +4,10 @@
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 60%, #bbf7d0 100%);
+  background: linear-gradient(135deg, #e8f0fe 0%, #dbeafe 60%, #bfdbfe 100%);
   padding: 5rem 2rem 4rem;
   text-align: center;
-  border-bottom: 1px solid #d1fae5;
+  border-bottom: 1px solid #bfdbfe;
 }
 
 .hero-content {
@@ -16,7 +16,7 @@
 }
 
 .hero-eyebrow {
-  color: #16a34a;
+  color: #1e3a8a;
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 
 .hero-tagline {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
-  color: #16a34a;
+  color: #dc6414;
   font-weight: 600;
   margin-bottom: 1.25rem;
 }
@@ -64,22 +64,22 @@
 }
 
 .btn-primary {
-  background-color: #16a34a;
+  background-color: #1e3a8a;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #15803d;
+  background-color: #1a2f73;
 }
 
 .btn-outline {
-  border: 2px solid #16a34a;
-  color: #16a34a;
+  border: 2px solid #1e3a8a;
+  color: #1e3a8a;
   background: transparent;
 }
 
 .btn-outline:hover {
-  background-color: #16a34a;
+  background-color: #1e3a8a;
   color: #ffffff;
 }
 
@@ -104,7 +104,7 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #16a34a;
+  background-color: #dc6414;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -112,6 +112,81 @@
 /* Featured Projects */
 .featured-section {
   border-bottom: 1px solid #e2e8f0;
+}
+
+/* Experience Quick Peek */
+.experience-peek-section {
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  max-width: 100%;
+  padding: 4rem 2rem;
+}
+
+.experience-peek-section .section-title,
+.experience-peek-section .featured-footer {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.exp-peek-list {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.exp-peek-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.85rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.exp-peek-item:hover {
+  border-color: #1e3a8a;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.08);
+}
+
+.exp-peek-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.exp-peek-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.exp-peek-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.1rem;
+}
+
+.exp-peek-company {
+  font-size: 0.85rem;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.exp-peek-period {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .featured-grid {
@@ -135,7 +210,7 @@
 .feat-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  border-color: #16a34a;
+  border-color: #1e3a8a;
 }
 
 .feat-card-header {
@@ -154,7 +229,7 @@
 }
 
 .feat-flagship {
-  background-color: #16a34a;
+  background-color: #dc6414;
   color: #ffffff;
   font-size: 0.7rem;
   font-weight: 700;
@@ -183,12 +258,12 @@
 }
 
 .tag {
-  background-color: #f0fdf4;
-  color: #166534;
+  background-color: #eff6ff;
+  color: #1e3a8a;
   font-size: 0.75rem;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
-  border: 1px solid #bbf7d0;
+  border: 1px solid #bfdbfe;
 }
 
 .featured-footer {
@@ -231,8 +306,8 @@
 
 .focus-card:hover {
   transform: translateY(-4px);
-  border-color: #16a34a;
-  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.1);
+  border-color: #1e3a8a;
+  box-shadow: 0 8px 24px rgba(30, 58, 138, 0.1);
 }
 
 .focus-icon {
@@ -267,6 +342,20 @@
 
   .focus-section {
     padding: 3rem 1.5rem;
+  }
+
+  .experience-peek-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .exp-peek-item {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .exp-peek-period {
+    width: 100%;
+    margin-left: calc(40px + 1rem);
   }
 
   .featured-grid {

@@ -18,9 +18,18 @@ function Experience() {
               <div className="timeline-dot" />
               <div className="timeline-content">
                 <div className="timeline-header">
-                  <div>
-                    <h3 className="job-role">{job.role}</h3>
-                    <p className="job-company">{job.company}</p>
+                  <div className="timeline-header-left">
+                    {job.logo && (
+                      <img
+                        src={job.logo}
+                        alt={`${job.company} logo`}
+                        className="company-logo"
+                      />
+                    )}
+                    <div>
+                      <h3 className="job-role">{job.role}</h3>
+                      <p className="job-company">{job.company}</p>
+                    </div>
                   </div>
                   <span className="job-period">{job.period}</span>
                 </div>
@@ -46,6 +55,13 @@ function Experience() {
         <div className="edu-grid">
           {education.map((edu) => (
             <div key={edu.id} className="edu-card">
+              {edu.logo && (
+                <img
+                  src={edu.logo}
+                  alt={`${edu.school} logo`}
+                  className="edu-logo"
+                />
+              )}
               <h3 className="edu-degree">{edu.degree}</h3>
               <p className="edu-school">{edu.school} — {edu.location}</p>
               <p className="edu-period">{edu.period}{edu.gpa && ` · GPA: ${edu.gpa}`}</p>

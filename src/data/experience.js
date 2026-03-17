@@ -2,6 +2,7 @@ const experience = [
   {
     id: 1,
     company: 'CornBelt AI',
+    logo: new URL('../logo-images/cornbelt-ai-logo.png', import.meta.url).href,
     role: 'Founder & Technical Lead',
     period: '2025–Present',
     bullets: [
@@ -16,6 +17,7 @@ const experience = [
   {
     id: 2,
     company: 'Asymmetrica Investments AG',
+    logo: new URL('../logo-images/asymmetrica-investments-logo.jpeg', import.meta.url).href,
     role: 'AI Engineer & Project Manager',
     period: '2024–2025',
     bullets: [
@@ -29,6 +31,7 @@ const experience = [
   {
     id: 3,
     company: 'Azteca Milling LP',
+    logo: new URL('../logo-images/azteca-milling-logo.jpg', import.meta.url).href,
     role: 'Operations Manager',
     period: '2017–2022',
     bullets: [
@@ -41,19 +44,8 @@ const experience = [
   },
   {
     id: 4,
-    company: 'AmeriQual Foods, LLC',
-    role: 'Thermal Process Engineer',
-    period: '2022',
-    bullets: [
-      'Developed and validated thermal processing schedules for new packaged food product lines',
-      'Conducted heat penetration studies and authored process documentation for FDA regulatory submission',
-      'Ensured full compliance with FDA thermal validation requirements for retort processing',
-    ],
-    tools: ['Thermal Processing', 'FDA Compliance', 'R&D'],
-  },
-  {
-    id: 5,
     company: 'Pioneer Hi-Bred International, Inc.',
+    logo: new URL('../logo-images/Pioneer-logo.png', import.meta.url).href,
     role: 'Research Associate',
     period: '2015–2016',
     bullets: [
@@ -64,8 +56,9 @@ const experience = [
     tools: ['Analytical Software', 'Field Data Management', 'USDA Compliance'],
   },
   {
-    id: 6,
+    id: 5,
     company: 'Azteca Milling LP',
+    logo: new URL('../logo-images/azteca-milling-logo.jpg', import.meta.url).href,
     role: 'Field Representative Supervisor',
     period: '2017–2019',
     bullets: [
@@ -82,6 +75,7 @@ const education = [
     id: 1,
     degree: 'Master of Science – Artificial Intelligence',
     school: 'University of the Cumberlands',
+    logo: new URL('../logo-images/university-of-the-cumberlands-logo.jpeg', import.meta.url).href,
     location: 'Williamsburg, KY',
     period: 'Expected December 2025',
     gpa: '3.9',
@@ -97,6 +91,7 @@ const education = [
     id: 2,
     degree: 'Master of Business Administration (MBA) – Project Management',
     school: 'University of Southern Indiana',
+    logo: new URL('../logo-images/university-of-southern-indiana-logo.jpeg', import.meta.url).href,
     location: 'Evansville, IN',
     period: '2023',
     gpa: '4.0',
@@ -112,6 +107,7 @@ const education = [
     id: 3,
     degree: 'Bachelor of Science – Biological and Food Process Engineering',
     school: 'Purdue University',
+    logo: new URL('../logo-images/purdue-logo.png', import.meta.url).href,
     location: 'West Lafayette, IN',
     period: '2014',
     gpa: null,
