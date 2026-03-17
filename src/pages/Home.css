@@ -4,9 +4,10 @@
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f4c81 100%);
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 60%, #bbf7d0 100%);
   padding: 5rem 2rem 4rem;
   text-align: center;
+  border-bottom: 1px solid #d1fae5;
 }
 
 .hero-content {
@@ -15,7 +16,7 @@
 }
 
 .hero-eyebrow {
-  color: #38bdf8;
+  color: #16a34a;
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -25,25 +26,32 @@
 .hero-name {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
-  color: #f1f5f9;
+  color: #0f172a;
   margin: 0 0 0.4rem;
 }
 
 .hero-title {
   font-size: clamp(1.1rem, 3vw, 1.6rem);
   font-weight: 400;
-  color: #38bdf8;
-  margin: 0 0 0.6rem;
+  color: #16a34a;
+  margin: 0 0 0.4rem;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  color: #475569;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
 .hero-location {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
 
 .hero-summary {
-  color: #cbd5e1;
+  color: #334155;
   font-size: 1rem;
   line-height: 1.75;
   margin-bottom: 2rem;
@@ -69,23 +77,23 @@
 }
 
 .btn-primary {
-  background-color: #38bdf8;
-  color: #0f172a;
+  background-color: #16a34a;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #7dd3fc;
+  background-color: #15803d;
 }
 
 .btn-outline {
-  border: 2px solid #38bdf8;
-  color: #38bdf8;
+  border: 2px solid #16a34a;
+  color: #16a34a;
   background: transparent;
 }
 
 .btn-outline:hover {
-  background-color: #38bdf8;
-  color: #0f172a;
+  background-color: #16a34a;
+  color: #ffffff;
 }
 
 /* Section */
@@ -98,7 +106,7 @@
 .section-title {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: #0f172a;
   margin-bottom: 2rem;
   text-align: center;
   position: relative;
@@ -109,16 +117,18 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #38bdf8;
+  background-color: #16a34a;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
 
 /* Skills */
 .skills-section {
-  background-color: #1e293b;
+  background-color: #f8fafc;
   max-width: 100%;
   padding: 4rem 2rem;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .skills-section .section-title {
@@ -136,14 +146,15 @@
 }
 
 .skill-card {
-  background-color: #0f172a;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .skill-category {
-  color: #38bdf8;
+  color: #16a34a;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -161,12 +172,12 @@
 }
 
 .skill-tag {
-  background-color: #1e293b;
-  color: #cbd5e1;
+  background-color: #f0fdf4;
+  color: #166534;
   font-size: 0.8rem;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
-  border: 1px solid #334155;
+  border: 1px solid #bbf7d0;
 }
 
 /* Quick nav */
@@ -177,19 +188,20 @@
 }
 
 .quick-card {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
   text-decoration: none;
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .quick-card:hover {
   transform: translateY(-4px);
-  border-color: #38bdf8;
-  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.1);
+  border-color: #16a34a;
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.1);
 }
 
 .quick-icon {
@@ -199,13 +211,28 @@
 }
 
 .quick-card h3 {
-  color: #f1f5f9;
+  color: #0f172a;
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
 }
 
 .quick-card p {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.9rem;
   margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero {
+    padding: 3rem 1.5rem 2.5rem;
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .skills-section {
+    padding: 3rem 1.5rem;
+  }
 }

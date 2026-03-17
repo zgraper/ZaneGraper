@@ -20,6 +20,7 @@ function Home() {
           <p className="hero-eyebrow">Hello, I&apos;m</p>
           <h1 className="hero-name">{profile.name}</h1>
           <h2 className="hero-title">{profile.title}</h2>
+          {profile.tagline && <p className="hero-tagline">{profile.tagline}</p>}
           <p className="hero-location">📍 {profile.location}</p>
           <p className="hero-summary">{profile.summary}</p>
           <div className="hero-cta">

@@ -12,7 +12,7 @@
 .page-title {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800;
-  color: #f1f5f9;
+  color: #0f172a;
   margin-bottom: 0.5rem;
 }
 
@@ -21,13 +21,13 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #38bdf8;
+  background-color: #16a34a;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
 
 .page-subtitle {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 1rem;
   margin: 0.5rem 0 0;
 }
@@ -39,12 +39,12 @@
 .exp-section-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #38bdf8;
+  color: #16a34a;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 /* Timeline */
@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-left: 2px solid #334155;
+  border-left: 2px solid #d1fae5;
   margin-left: 0.5rem;
 }
 
@@ -69,7 +69,7 @@
   top: 4px;
   width: 14px;
   height: 14px;
-  background-color: #38bdf8;
+  background-color: #16a34a;
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -90,25 +90,25 @@
 .job-role {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: #0f172a;
   margin: 0 0 0.2rem;
 }
 
 .job-company {
   font-size: 0.9rem;
-  color: #38bdf8;
+  color: #16a34a;
   margin: 0;
 }
 
 .job-period {
   font-size: 0.8rem;
-  color: #64748b;
+  color: #94a3b8;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .job-description {
-  color: #cbd5e1;
+  color: #334155;
   font-size: 0.9rem;
   line-height: 1.65;
   margin: 0 0 0.75rem;
@@ -121,12 +121,12 @@
 }
 
 .tool-tag {
-  background-color: #1e293b;
-  color: #94a3b8;
+  background-color: #f0fdf4;
+  color: #166534;
   font-size: 0.75rem;
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
-  border: 1px solid #334155;
+  border: 1px solid #bbf7d0;
 }
 
 /* Education */
@@ -137,35 +137,36 @@
 }
 
 .edu-card {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .edu-degree {
   font-size: 1rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: #0f172a;
   margin: 0 0 0.4rem;
 }
 
 .edu-school {
   font-size: 0.9rem;
-  color: #38bdf8;
+  color: #16a34a;
   margin: 0 0 0.25rem;
 }
 
 .edu-period {
   font-size: 0.8rem;
-  color: #64748b;
+  color: #94a3b8;
   margin: 0 0 0.75rem;
 }
 
 .edu-highlights {
   margin: 0;
   padding-left: 1.2rem;
-  color: #94a3b8;
+  color: #475569;
   font-size: 0.85rem;
   line-height: 1.7;
 }
@@ -184,18 +185,38 @@
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 0.85rem 1rem;
-  color: #cbd5e1;
+  color: #334155;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
 .cert-icon {
-  color: #38bdf8;
+  color: #16a34a;
   font-size: 0.85rem;
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .experience-page {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-list {
+    grid-template-columns: 1fr;
+  }
 }
