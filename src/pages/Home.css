@@ -153,18 +153,17 @@
   line-height: 1.4;
 }
 
-.feat-period {
-  font-size: 0.8rem;
-  color: #16a34a;
+.feat-flagship {
+  background-color: #16a34a;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
   white-space: nowrap;
   flex-shrink: 0;
-}
-
-.feat-role {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #64748b;
-  margin: 0;
 }
 
 .feat-description {

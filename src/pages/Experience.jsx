@@ -24,7 +24,11 @@ function Experience() {
                   </div>
                   <span className="job-period">{job.period}</span>
                 </div>
-                <p className="job-description">{job.description}</p>
+                <ul className="job-bullets">
+                  {job.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
                 <div className="job-tools">
                   {job.tools.map((tool) => (
                     <span key={tool} className="tool-tag">{tool}</span>

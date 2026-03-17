@@ -4,8 +4,13 @@ const experience = [
     company: 'CornBelt AI',
     role: 'Founder & Technical Lead',
     period: '2025–Present',
-    description:
-      'Founded and led development of an AI-powered agronomy advisory platform targeting row crop producers. Architected and deployed a domain-specific LLM wrapper for corn and soybean agronomy using RAG.',
+    bullets: [
+      'Founded and deployed an AI agronomy advisory platform targeting corn and soybean producers',
+      'Architected a RAG pipeline with FAISS vector search delivering citation-backed, domain-specific answers',
+      'Integrated AWS Lambda, S3, DynamoDB, Cognito, and API Gateway in a serverless architecture',
+      'Achieved sub-$20/month production hosting cost through infrastructure optimization',
+      'Built a toggle-based routing system for Corn, Soybean, and General agronomy query domains',
+    ],
     tools: ['Python', 'RAG', 'AWS', 'LangChain', 'FAISS'],
   },
   {
@@ -13,8 +18,12 @@ const experience = [
     company: 'Asymmetrica Investments AG',
     role: 'AI Engineer & Project Manager',
     period: '2024–2025',
-    description:
-      'Directed AI integration and automation projects improving investor analytics and operational workflows. Designed CrewAI and LangChain-based agents achieving a 12× productivity gain.',
+    bullets: [
+      'Designed CrewAI + LangChain agent pipelines scaling weekly leads from 100 to 2,000 — a 12× productivity gain',
+      'Reduced manual reporting time by 80%+ through end-to-end AI pipeline automation',
+      'Led development of Agri-Xchange, a blockchain-based commodity trading platform MVP',
+      'Built investor-facing Power BI dashboards for real-time portfolio and pipeline analytics',
+    ],
     tools: ['Python', 'LangChain', 'CrewAI', 'AWS', 'Bubble.io', 'Power BI'],
   },
   {
@@ -22,8 +31,12 @@ const experience = [
     company: 'Azteca Milling LP',
     role: 'Operations Manager',
     period: '2017–2022',
-    description:
-      'Oversaw daily operations, procurement, production, maintenance, and quality at a multimillion-dollar food manufacturing plant. Managed $6M procurement budget and $1.2M operations budget.',
+    bullets: [
+      'Managed $6M annual procurement budget and $1.2M operations budget across production, maintenance, and quality',
+      'Led a cross-functional team of 25+ employees, achieving continuous improvement targets year over year',
+      'Implemented Lean Six Sigma initiatives reducing process waste and downtime by 15%+',
+      'Oversaw HACCP, FDA, and SQF compliance at a high-volume corn masa flour manufacturing facility',
+    ],
     tools: ['Excel', 'SAP', 'Statistical Process Control', 'Six Sigma'],
   },
   {
@@ -31,8 +44,11 @@ const experience = [
     company: 'AmeriQual Foods, LLC',
     role: 'Thermal Process Engineer',
     period: '2022',
-    description:
-      'Developed and validated thermal processing procedures for new food products. Conducted heat penetration tests and ensured compliance with FDA thermal validation requirements.',
+    bullets: [
+      'Developed and validated thermal processing schedules for new packaged food product lines',
+      'Conducted heat penetration studies and authored process documentation for FDA regulatory submission',
+      'Ensured full compliance with FDA thermal validation requirements for retort processing',
+    ],
     tools: ['Thermal Processing', 'FDA Compliance', 'R&D'],
   },
   {
@@ -40,8 +56,11 @@ const experience = [
     company: 'Pioneer Hi-Bred International, Inc.',
     role: 'Research Associate',
     period: '2015–2016',
-    description:
-      'Supported soybean trait characterization and data analysis for transgenic research. Managed planting, harvesting, and laboratory data processing with USDA compliance.',
+    bullets: [
+      'Supported transgenic soybean trait characterization and statistical data analysis',
+      'Managed field planting, harvesting, and laboratory workflows with USDA compliance documentation',
+      'Contributed to multi-season trait performance studies for commercial variety development',
+    ],
     tools: ['Analytical Software', 'Field Data Management', 'USDA Compliance'],
   },
   {
@@ -49,8 +68,11 @@ const experience = [
     company: 'Azteca Milling LP',
     role: 'Field Representative Supervisor',
     period: '2017–2019',
-    description:
-      'Oversaw non-GMO stewardship program ensuring quality and compliance in corn sourcing. Strengthened relationships with local growers and grain suppliers.',
+    bullets: [
+      'Supervised non-GMO stewardship program across a corn sourcing supply chain serving the plant',
+      'Built and maintained relationships with 50+ local growers and grain elevator partners',
+      'Enforced identity-preservation and quality compliance standards throughout procurement',
+    ],
     tools: ['Supply Chain', 'Quality Assurance', 'Non-GMO Stewardship'],
   },
 ];
