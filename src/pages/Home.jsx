@@ -55,9 +55,8 @@ function Home() {
             <article key={project.id} className="feat-card">
               <div className="feat-card-header">
                 <h3 className="feat-title">{project.title}</h3>
-                <span className="feat-period">{project.period}</span>
+                {project.flagship && <span className="feat-flagship">Flagship</span>}
               </div>
-              <p className="feat-role">{project.role}</p>
               <p className="feat-description">{project.description}</p>
               <div className="feat-tags">
                 {project.tags.map((tag) => (

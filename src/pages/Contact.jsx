@@ -21,10 +21,10 @@ const contactItems = [
     href: null,
   },
   {
-    label: 'Portfolio',
-    icon: '🌐',
-    value: 'bit.ly/zgraper',
-    href: profile.portfolio,
+    label: 'GitHub',
+    icon: '💻',
+    value: 'github.com/zgraper',
+    href: profile.github,
   },
 ];
 

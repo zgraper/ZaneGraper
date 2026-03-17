@@ -114,6 +114,14 @@
   margin: 0 0 0.75rem;
 }
 
+.job-bullets {
+  margin: 0 0 0.75rem;
+  padding-left: 1.2rem;
+  color: #334155;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
 .job-tools {
   display: flex;
   flex-wrap: wrap;
