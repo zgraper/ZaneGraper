@@ -1,0 +1,181 @@
+ZANE GRAPER, MBA
+Fort Branch, Indiana | zgraper@gmail.com | linkedin.com/in/zanegraper | bit.ly/zgraper
+
+=======================================================================
+DETAILED CURRICULUM VITAE (CV)
+=======================================================================
+
+SUMMARY
+--------
+Versatile and strategic AI Engineer, Project Manager, and Operations Leader with multidisciplinary experience spanning
+manufacturing, process optimization, data analytics, automation, and artificial intelligence. Over a decade of proven
+success in leading cross-functional teams, managing multimillion-dollar budgets, and driving business process
+improvement through Lean Six Sigma and emerging technologies. Combines a technical foundation in engineering with
+advanced business and AI expertise to design scalable, data-driven solutions that improve operational efficiency and
+decision-making. Committed to continuous learning, ethical AI development, and lifelong innovation.
+
+=======================================================================
+EDUCATION
+=======================================================================
+
+Master of Science – Artificial Intelligence (Expected December 2025)
+University of the Cumberlands, Williamsburg, KY
+- GPA: 3.9
+- Courses: Neural Networks & Deep Learning, Natural Language Processing, Data Visualization, AI for Human-Computer
+  Interaction, AI in Risk Management, Ethics in Artificial Intelligence, Generative AI with LLMs, Application of AI in Healthcare
+- Capstone: Applied AI project integrating LLM-based systems for financial and educational technology applications.
+
+Master of Business Administration (MBA), Specialization in Project Management (2023)
+University of Southern Indiana, Evansville, IN
+- GPA: 4.0
+- Focus Areas: Strategic Management, Financial Decision-Making, Leadership, Operations Management, Risk Analysis
+- Achieved full honors distinction.
+
+Bachelor of Science – Biological and Food Process Engineering (2014)
+Purdue University, West Lafayette, IN
+- Concentration: Biological and Food Process Engineering
+- Honors & Awards: Lilly Endowment Scholar, Departmental Outstanding Freshman of the Year
+- Study Abroad: EARTH University (Costa Rica) – Sustainable Agriculture Practices
+- Activities: American Society of Agricultural and Biological Engineers, Undergraduate Research Assistant
+
+=======================================================================
+TECHNICAL SKILLS
+=======================================================================
+Programming & Development:
+Python (pandas, NumPy, scikit-learn, TensorFlow, PyTorch), SQL, JavaScript, HTML/CSS, Git, Jira, Bubble.io, CrewAI, LangChain
+
+AI, Machine Learning & Data Science:
+Large Language Models (LLMs), RAG Pipelines, Prompt Engineering, NLP, Deep Learning, Predictive Modeling,
+Data Visualization (Power BI, Tableau), TensorFlow, PyTorch, AWS SageMaker, Model Deployment & Monitoring
+
+Project Management & Tools:
+Agile / Scrum / Kanban, Lean Six Sigma (Black Belt), CAPM®, Risk Assessment, Resource Allocation, Stakeholder Management,
+Budget & Cost Control, SDLC, Jira, Microsoft Project
+
+Cloud & Infrastructure:
+AWS Certified Cloud Practitioner, Azure ML, API Integration, Cloud Automation, Data Security, ERP Systems (SAP)
+
+Operations & Process Improvement:
+Process Optimization, Continuous Improvement, GMP, HACCP, AIB, Food Safety Compliance, Quality Assurance, SOP Development
+
+Soft Skills:
+Leadership, Communication, Strategic Thinking, Collaboration, Analytical Reasoning, Problem Solving, Decision-Making
+
+=======================================================================
+CERTIFICATIONS
+=======================================================================
+- Certified Associate in Project Management (CAPM®), Project Management Institute
+- AWS Certified Cloud Practitioner (AWS-CCP)
+- Lean Six Sigma Black Belt (LSSBB)
+- Artificial Intelligence Expert (CAIEC®)
+- Scrum Master Professional Certification (SMPC®)
+- Agile Leader Professional Certification (ALPC®)
+- Remote Work Professional Certification (RWPC®)
+- AI for Leaders Professional Certification (AIFL®)
+- Procore Construction Management Certificate (LinkedIn Learning)
+- CSCMP Supply Chain Foundations
+- Career Essentials in Data Analysis (Microsoft & LinkedIn)
+- Career Essentials in Generative AI (Microsoft & LinkedIn)
+- Responsive Web Design, JavaScript Algorithms, Front-End Libraries (freeCodeCamp)
+
+=======================================================================
+PROFESSIONAL EXPERIENCE
+=======================================================================
+
+FOUNDER & TECHNICAL LEAD -- CORNBELT AI (2025-Present)
+- Architected and deployed a domain-specific LLM wrapper for corn and soybean agronomy using a Retrieval-Augmented Generation (RAG) framework.
+- Designed automated PDF ingestion pipeline to extract text, tables, and metadata for structured vector indexing.
+- Built scalable document processing workflow to convert unstructured agricultural research into chunked, queryable embeddings.
+- Implemented vector search architecture (FAISS / AWS-native alternatives) to enable source-grounded responses with citation support.
+- Designed metadata schema to support crop-scoped retrieval (corn, soybean, dual-domain content).
+- Developed prompt-engineering framework integrating farm-level and field-level contextual inputs.
+- Integrated AWS infrastructure (Lambda, S3, DynamoDB, Cognito, API Gateway) for production-ready backend deployment.
+- Structured IAM roles and CloudFormation templates to support modular, scalable infrastructure.
+- Optimized chunking and embedding strategy to balance retrieval precision and compute cost.
+- Implemented multi-layer data separation (farm profile vs field-specific context) for dynamic prompt augmentation.
+- Designed toggle-based contextual query system (Corn / Soybean / Other) for domain-specific model routing.
+- Evaluated storage strategies (S3 + registry DB + vector index) to minimize cost under $20/month hosting target.
+- Developed full-stack architecture separating marketing site (cornbeltai.com) from application layer (app subdomain).
+- Designed user workflow for farm profiles, field-specific prompts, and contextual agronomic recommendations.
+- Built extensible system allowing ongoing ingestion of new research documents without re-architecting pipeline.
+- Implemented citation-capable LLM wrapper to increase trust and reduce hallucination risk.
+- Designed scalable content acquisition strategy leveraging land-grant university extension resources (e.g., Purdue, Iowa State).
+- Created modular LLM wrapper to support future expansion beyond corn/soy into soil science and tillage domains.
+- Conducted cost–benefit analysis of Supabase vs AWS-native infrastructure for long-term scalability.
+- Built production-oriented skeleton suitable for investor demonstration and enterprise expansion.
+- Founded and led development of AI-powered agronomy advisory platform targeting row crop producers.
+- Combined AI engineering, cloud architecture, and agricultural domain research into a deployable SaaS prototype.
+- Translated academic agronomic literature into structured AI-ready knowledge base.
+- Positioned platform for future integration with farm management systems and real-time field data inputs.
+
+AI ENGINEER & PROJECT MANAGER — ASYMMETRICA INVESTMENTS AG (2024–2025)
+- Directed AI integration and automation projects improving investor analytics and operational workflows.
+- Designed CrewAI and LangChain-based agents automating lead generation and data retrieval, achieving a 12× productivity gain.
+- Built RAG pipelines to enhance AI output accuracy and performance across multiple departments.
+- Partnered with executives and engineering teams to define AI project roadmaps and ensure scalable delivery.
+- Led development of the “Agri-Xchange” MVP, an AI and blockchain-based commodity trading platform for sustainable agriculture.
+- Designed end-to-end AI pipelines reducing manual reporting time by over 80%.
+- Tools: Python, LangChain, CrewAI, AWS, Bubble.io, Power BI
+
+OPERATIONS MANAGER — AZTECA MILLING LP (2017–2022)
+- Oversaw daily operations, procurement, production, maintenance, and quality at a multimillion-dollar food manufacturing plant.
+- Managed procurement budget of $6M and operations budget of up to $1.2M, ensuring compliance with GMP, HACCP, AIB, and organic standards.
+- Led Lean Six Sigma process improvements, reducing downtime and increasing throughput by 5 minutes per truck.
+- Installed color-sorting systems improving purity and reducing GMO contamination by 0.2%.
+- Reduced undocumented corn inventory loss to <0.05%, the lowest in facility history.
+- Supervised 15–20 employees, fostering a culture of safety, accountability, and teamwork.
+- Tools: Excel, SAP, Statistical Process Control, Six Sigma, Production Analytics
+
+THERMAL PROCESS ENGINEER — AMERIQUAL FOODS, LLC (2022)
+- Developed and validated thermal processing procedures for new food products.
+- Conducted heat penetration tests and ensured compliance with FDA thermal validation requirements.
+- Collaborated with R&D and operations teams to improve process stability and product safety.
+
+RESEARCH ASSOCIATE — PIONEER HI-BRED INTERNATIONAL, INC. (2015–2016)
+- Supported soybean trait characterization and data analysis for transgenic research.
+- Managed planting, harvesting, and laboratory data processing; ensured compliance with USDA regulations.
+- Utilized analytical software for field data management and analysis.
+
+FIELD REPRESENTATIVE SUPERVISOR — AZTECA MILLING LP (2017–2019)
+- Oversaw non-GMO stewardship program ensuring quality and compliance in corn sourcing.
+- Strengthened relationships with local growers and grain suppliers through communication and quality initiatives.
+
+=======================================================================
+SELECTED PROJECTS & INTERNSHIPS
+=======================================================================
+IVoT Financial Training – Product Development & Data Visualization Intern (2024)
+- Built Power BI dashboards for financial training programs, enabling non-technical users to interact with data visually.
+- Collaborated on educational game prototypes for finance learning through AI-based simulations.
+
+GrowYourBusiness – Project Manager (2024–2025)
+- Oversaw automation and web development projects using Bubble.io and Zapier integrations.
+- Streamlined client management processes, reducing manual administrative work by 25%.
+
+Baby Blossom Market – Founder (2023–2024)
+- Established e-commerce brand from concept to execution, developing marketing campaigns and SEO strategies.
+- Built online storefront and supply chain automation for baby apparel sales.
+
+Asymmetrica Investments – AI Lead Generation Platform (2024–2025)
+- Designed and implemented an AI-driven pipeline using CrewAI and LangChain, scaling weekly lead output from 100 to 2,000.
+
+Asymmetrica Investments – Agri-Xchange Platform (2024–2025)
+- Developed MVP for AI + blockchain platform supporting sustainable commodity trading and traceability.
+
+Sparkle Marketing – Marketing Intern (2023)
+- Contributed to campaign design, social media marketing, and Python-based automation for content management.
+
+=======================================================================
+AWARDS & RECOGNITION
+=======================================================================
+- Youngest manager in Azteca Milling history; identified for promotion to Plant Superintendent.
+- Lilly Endowment Scholar, Purdue University.
+- Departmental Outstanding Freshman of the Year (2011), Purdue University.
+- Recognized at Asymmetrica Investments for initiative in automating internal processes.
+
+=======================================================================
+ADDITIONAL INFORMATION
+=======================================================================
+- Member, American Mensa (Top 2% IQ Society)
+- Member, Project Management Institute (PMI)
+- Volunteer: Local community education on AI literacy and ethical technology.
+- Interests: AI Ethics, Quantum Computing, Data Visualization, Automation, Writing, and Sustainable Agriculture.
