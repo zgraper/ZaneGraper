@@ -30,6 +30,11 @@ function Projects() {
                 <span key={tag} className="tag">{tag}</span>
               ))}
             </div>
+            {project.link && (
+              <a href={project.link} target="_blank" rel="noreferrer" className="project-link">
+                View Project →
+              </a>
+            )}
           </article>
         ))}
       </div>

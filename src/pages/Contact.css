@@ -12,7 +12,7 @@
 .page-title {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800;
-  color: #f1f5f9;
+  color: #0f172a;
   margin-bottom: 0.5rem;
 }
 
@@ -21,13 +21,13 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #38bdf8;
+  background-color: #16a34a;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
 
 .page-subtitle {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 1rem;
   margin: 0.5rem 0 0;
 }
@@ -56,15 +56,17 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 10px;
   padding: 1.25rem 1.5rem;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .contact-card:hover {
-  border-color: #38bdf8;
+  border-color: #16a34a;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.08);
 }
 
 .contact-icon {
@@ -81,41 +83,42 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #64748b;
+  color: #94a3b8;
   margin-bottom: 0.2rem;
 }
 
 .contact-value {
   font-size: 0.95rem;
-  color: #f1f5f9;
+  color: #0f172a;
 }
 
 .contact-link {
-  color: #38bdf8;
+  color: #16a34a;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .contact-link:hover {
-  color: #7dd3fc;
+  color: #15803d;
   text-decoration: underline;
 }
 
 /* Form */
 .contact-form {
-  background-color: #1e293b;
-  border: 1px solid #334155;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .form-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #f1f5f9;
+  color: #0f172a;
   margin: 0;
 }
 
@@ -128,16 +131,16 @@
 .form-group label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #94a3b8;
+  color: #475569;
 }
 
 .form-group input,
 .form-group textarea {
-  background-color: #0f172a;
-  border: 1px solid #334155;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
   padding: 0.65rem 0.85rem;
-  color: #f1f5f9;
+  color: #0f172a;
   font-size: 0.9rem;
   font-family: inherit;
   resize: vertical;
@@ -147,12 +150,13 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #38bdf8;
+  border-color: #16a34a;
+  background-color: #ffffff;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #475569;
+  color: #94a3b8;
 }
 
 .btn {
@@ -169,10 +173,17 @@
 }
 
 .btn-primary {
-  background-color: #38bdf8;
-  color: #0f172a;
+  background-color: #16a34a;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #7dd3fc;
+  background-color: #15803d;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .contact-page {
+    padding: 2rem 1.5rem 3rem;
+  }
 }

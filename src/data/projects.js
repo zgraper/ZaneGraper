@@ -14,6 +14,8 @@ const projects = [
       'Built toggle-based query system for Corn / Soybean / Other domain routing',
     ],
     tags: ['Python', 'RAG', 'AWS', 'LLM', 'FAISS', 'LangChain'],
+    category: 'AI / ML',
+    link: null,
   },
   {
     id: 2,
@@ -28,6 +30,8 @@ const projects = [
       'Integrated Power BI dashboards for investor analytics',
     ],
     tags: ['Blockchain', 'Python', 'LangChain', 'CrewAI', 'AWS', 'Power BI'],
+    category: 'AI / ML',
+    link: null,
   },
   {
     id: 3,
@@ -42,6 +46,8 @@ const projects = [
       'Deployed on AWS with Bubble.io front-end integration',
     ],
     tags: ['CrewAI', 'LangChain', 'Python', 'AWS', 'Bubble.io'],
+    category: 'AI / ML',
+    link: null,
   },
   {
     id: 4,
@@ -56,6 +62,8 @@ const projects = [
       'Implemented Zapier automation workflows',
     ],
     tags: ['Bubble.io', 'Zapier', 'Project Management', 'Automation'],
+    category: 'Automation',
+    link: null,
   },
   {
     id: 5,
@@ -69,6 +77,8 @@ const projects = [
       'Collaborated on AI-based financial simulation game prototypes',
     ],
     tags: ['Power BI', 'Data Visualization', 'Finance'],
+    category: 'Data & Analytics',
+    link: null,
   },
   {
     id: 6,
@@ -82,6 +92,8 @@ const projects = [
       'Developed SEO and digital marketing strategies',
     ],
     tags: ['E-Commerce', 'SEO', 'Marketing', 'Automation'],
+    category: 'Business',
+    link: null,
   },
 ];
 
