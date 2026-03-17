@@ -7,7 +7,7 @@ const projects = [
       'AI-powered agronomy advisory platform for corn and soybean producers. Uses a Retrieval-Augmented Generation (RAG) pipeline to deliver citation-backed answers sourced from domain-specific agronomic literature.',
     tags: ['Python', 'RAG', 'LangChain', 'FAISS', 'AWS', 'LLM'],
     category: 'Applications',
-    liveLink: null,
+    liveLink: 'https://www.cornbeltai.com',
     repoLink: 'https://github.com/zgraper/CornbeltAI',
   },
   {
@@ -17,7 +17,7 @@ const projects = [
       'Quantitative finance research environment for portfolio analysis, statistical modeling, and systematic strategy backtesting. Built to explore alpha signals across equity and commodity markets.',
     tags: ['Python', 'Pandas', 'NumPy', 'Backtesting', 'Statistics', 'Finance'],
     category: 'AI / ML Systems',
-    liveLink: null,
+    liveLink: 'https://zag-quant-lab.streamlit.app/',
     repoLink: 'https://github.com/zgraper/ZAG-Quant-Lab',
   },
   {
@@ -27,7 +27,7 @@ const projects = [
       'Modular machine learning engine for training, evaluating, and deploying regression models. Supports multiple model types with a clean API for feature engineering, cross-validation, and prediction export.',
     tags: ['Python', 'Scikit-learn', 'Machine Learning', 'Regression', 'Data Science'],
     category: 'AI / ML Systems',
-    liveLink: null,
+    liveLink: 'https://regressionengine.streamlit.app/',
     repoLink: 'https://github.com/zgraper/Regression-Engine',
   },
   {
@@ -42,6 +42,16 @@ const projects = [
   },
   {
     id: 5,
+    title: 'RetroGPT-2',
+    description:
+      'A retro-styled Streamlit chatbot that lets users converse with GPT-2. Offers an accessible interface for exploring raw GPT-2 text generation in an interactive chat format.',
+    tags: ['Python', 'GPT-2', 'NLP', 'Streamlit', 'Chatbot'],
+    category: 'Applications',
+    liveLink: 'https://retrogpt-2.streamlit.app/',
+    repoLink: 'https://github.com/zgraper/RetroGPT-2',
+  },
+  {
+    id: 6,
     title: 'PhonemeFix',
     description:
       'NLP utility for phoneme-level text correction and normalization. Cleans and standardizes inconsistent transcriptions to improve downstream speech and language model performance.',
