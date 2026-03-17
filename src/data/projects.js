@@ -42,7 +42,7 @@ const projects = [
   },
   {
     id: 5,
-    title: 'PhoneFix',
+    title: 'PhonemeFix',
     description:
       'NLP utility for phoneme-level text correction and normalization. Cleans and standardizes inconsistent transcriptions to improve downstream speech and language model performance.',
     tags: ['Python', 'NLP', 'Phonetics', 'Text Processing'],
