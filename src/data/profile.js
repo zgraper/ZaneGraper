@@ -1,8 +1,10 @@
 const profile = {
-  name: 'Zane Graper, MBA',
+  name: 'Zane Graper',
   title: 'AI Engineer & Project Manager',
-  tagline: 'Building intelligent systems at the intersection of AI, data, and operations.',
+  tagline: 'AI, automation, and practical systems built for real-world use.',
   location: 'Fort Branch, Indiana',
+  heroSummary:
+    'I build LLM-powered platforms, autonomous agents, and full-stack applications that solve real business problems. With a background spanning AI engineering, quantitative finance, and operations management, I turn complex technical challenges into practical, production-ready systems.',
   email: 'zgraper@gmail.com',
   linkedin: 'https://linkedin.com/in/zanegraper',
   github: 'https://github.com/zgraper',
