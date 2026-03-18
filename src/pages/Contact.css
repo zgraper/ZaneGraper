@@ -21,7 +21,7 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #16a34a;
+  background-color: #3b82f6;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -58,15 +58,16 @@
   gap: 1rem;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1.25rem 1.5rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .contact-card:hover {
-  border-color: #16a34a;
-  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.08);
+  border-color: #3b82f6;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
 }
 
 .contact-icon {
@@ -93,13 +94,13 @@
 }
 
 .contact-link {
-  color: #16a34a;
+  color: #1e3a8a;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .contact-link:hover {
-  color: #15803d;
+  color: #3b82f6;
   text-decoration: underline;
 }
 
@@ -107,12 +108,12 @@
 .contact-form {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .form-title {
@@ -150,7 +151,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #16a34a;
+  border-color: #3b82f6;
   background-color: #ffffff;
 }
 
@@ -162,23 +163,27 @@
 .btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
-  border-radius: 6px;
-  font-size: 0.95rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: 0.3px;
   text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
   cursor: pointer;
   border: none;
   width: fit-content;
 }
 
 .btn-primary {
-  background-color: #16a34a;
+  background-color: #1e3a8a;
   color: #ffffff;
+  box-shadow: 0 2px 6px rgba(30, 58, 138, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: #15803d;
+  background-color: #1a2f73;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.35);
+  transform: translateY(-1px);
 }
 
 /* Responsive */

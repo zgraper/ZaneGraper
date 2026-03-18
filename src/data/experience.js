@@ -44,19 +44,6 @@ const experience = [
   },
   {
     id: 4,
-    company: 'Pioneer Hi-Bred International, Inc.',
-    logo: new URL('../logo-images/Pioneer-logo.png', import.meta.url).href,
-    role: 'Research Associate',
-    period: '2015–2016',
-    bullets: [
-      'Supported transgenic soybean trait characterization and statistical data analysis',
-      'Managed field planting, harvesting, and laboratory workflows with USDA compliance documentation',
-      'Contributed to multi-season trait performance studies for commercial variety development',
-    ],
-    tools: ['Analytical Software', 'Field Data Management', 'USDA Compliance'],
-  },
-  {
-    id: 5,
     company: 'Azteca Milling LP',
     logo: new URL('../logo-images/azteca-milling-logo.jpg', import.meta.url).href,
     role: 'Field Representative Supervisor',
@@ -67,6 +54,19 @@ const experience = [
       'Enforced identity-preservation and quality compliance standards throughout procurement',
     ],
     tools: ['Supply Chain', 'Quality Assurance', 'Non-GMO Stewardship'],
+  },
+  {
+    id: 5,
+    company: 'Pioneer Hi-Bred International, Inc.',
+    logo: new URL('../logo-images/Pioneer-logo.png', import.meta.url).href,
+    role: 'Research Associate',
+    period: '2015–2016',
+    bullets: [
+      'Supported transgenic soybean trait characterization and statistical data analysis',
+      'Managed field planting, harvesting, and laboratory workflows with USDA compliance documentation',
+      'Contributed to multi-season trait performance studies for commercial variety development',
+    ],
+    tools: ['Analytical Software', 'Field Data Management', 'USDA Compliance'],
   },
 ];
 
