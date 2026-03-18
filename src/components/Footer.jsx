@@ -11,6 +11,9 @@ function Footer() {
         <a href={profile.github} target="_blank" rel="noreferrer">
           GitHub
         </a>
+        <a href={profile.credly} target="_blank" rel="noreferrer">
+          Credly
+        </a>
         <a href={`mailto:${profile.email}`}>{profile.email}</a>
       </div>
       <p>

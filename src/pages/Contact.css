@@ -21,7 +21,7 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #3b82f6;
+  background-color: #2563eb;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -65,7 +65,7 @@
 }
 
 .contact-card:hover {
-  border-color: #3b82f6;
+  border-color: #2563eb;
   box-shadow: 0 6px 16px rgba(59, 130, 246, 0.1);
   transform: translateY(-2px);
 }
@@ -100,7 +100,7 @@
 }
 
 .contact-link:hover {
-  color: #3b82f6;
+  color: #2563eb;
   text-decoration: underline;
 }
 
@@ -151,7 +151,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #3b82f6;
+  border-color: #2563eb;
   background-color: #ffffff;
 }
 

@@ -46,7 +46,7 @@ const projects = [
     description:
       'A retro-styled Streamlit chatbot that lets users converse with GPT-2. Offers an accessible interface for exploring raw GPT-2 text generation in an interactive chat format.',
     tags: ['Python', 'GPT-2', 'NLP', 'Streamlit', 'Chatbot'],
-    category: 'Applications',
+    category: 'AI / ML Systems',
     liveLink: 'https://retrogpt-2.streamlit.app/',
     repoLink: 'https://github.com/zgraper/RetroGPT-2',
   },

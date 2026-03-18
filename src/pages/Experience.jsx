@@ -1,4 +1,5 @@
 import { experience, education, certifications, internships } from '../data/experience';
+import mensaBadge from '../certifications/american-mensa-member.png';
 import './Experience.css';
 
 function Experience() {
@@ -78,15 +79,42 @@ function Experience() {
       {/* Certifications */}
       <section className="exp-section">
         <h2 className="exp-section-title">Certifications</h2>
-        <ul className="cert-list">
+        <div className="cert-grid">
           {certifications.map((cert) => (
-            <li key={cert} className="cert-item">
-              <span className="cert-icon">✔</span>
-              {cert}
-            </li>
+            <div key={cert.id} className="cert-card">
+              <div className="cert-card-body">
+                <span className="cert-icon">✔</span>
+                <div className="cert-card-info">
+                  <p className="cert-name">{cert.name}</p>
+                  <p className="cert-issuer">{cert.issuer}</p>
+                </div>
+              </div>
+              <a
+                href={cert.file}
+                target="_blank"
+                rel="noreferrer"
+                className="cert-view-btn"
+              >
+                View Certificate
+              </a>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
+
+      {/* Mensa */}
+      <aside className="mensa-aside">
+        <img src={mensaBadge} alt="American Mensa Member badge" className="mensa-badge" />
+        <div className="mensa-text">
+          <h3 className="mensa-title">American Mensa Member</h3>
+          <p className="mensa-description">
+            Mensa International is the world's largest and most well-known high-IQ society,
+            open to individuals who score in the top 2% of the population on an accepted
+            standardized intelligence test. Membership is a testament to exceptional
+            cognitive ability and intellectual curiosity.
+          </p>
+        </div>
+      </aside>
 
       {/* Internships & Other */}
       <section className="exp-section">
