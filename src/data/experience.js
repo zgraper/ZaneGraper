@@ -29,7 +29,7 @@ const homeHighlights = [
   },
   {
     id: 'h4',
-    logo: new URL('../logo-images/university-of-southern-indiana-logo.jpeg', import.meta.url).href,
+    logo: new URL('../logo-images/university-of-southern-indiana-logo.png', import.meta.url).href,
     role: 'MBA – Project Management',
     company: 'University of Southern Indiana',
     period: '2023',
@@ -140,7 +140,7 @@ const education = [
     id: 2,
     degree: 'Master of Business Administration (MBA) – Project Management',
     school: 'University of Southern Indiana',
-    logo: new URL('../logo-images/university-of-southern-indiana-logo.jpeg', import.meta.url).href,
+    logo: new URL('../logo-images/university-of-southern-indiana-logo.png', import.meta.url).href,
     location: 'Evansville, IN',
     period: '2023',
     gpa: '4.0',
@@ -171,7 +171,7 @@ const education = [
     id: 4,
     degree: 'Master of Science – Financial Engineering',
     school: 'WorldQuant University',
-    logo: new URL('../logo-images/worldquant-logo.png', import.meta.url).href,
+    logo: new URL('../logo-images/worldquant-logo.jpg', import.meta.url).href,
     location: 'Online',
     period: 'Expected May 2026',
     gpa: null,
@@ -186,14 +186,62 @@ const education = [
 ];
 
 const certifications = [
-  'Certified Associate in Project Management (CAPM®)',
-  'AWS Certified Cloud Practitioner (AWS-CCP)',
-  'Lean Six Sigma Black Belt (LSSBB)',
-  'Artificial Intelligence Expert (CAIEC®)',
-  'Scrum Master Professional Certification (SMPC®)',
-  'Agile Leader Professional Certification (ALPC®)',
-  'AI for Leaders Professional Certification (AIFL®)',
-  'Responsive Web Design, JavaScript Algorithms, Front-End Libraries (freeCodeCamp)',
+  {
+    id: 'c1',
+    name: 'Certified Associate in Project Management (CAPM®)',
+    issuer: 'PMI',
+    file: new URL('../certifications/CAPM-Certificate.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
+  {
+    id: 'c2',
+    name: 'AWS Certified Cloud Practitioner (AWS-CCP)',
+    issuer: 'Amazon Web Services',
+    file: new URL('../certifications/AWS-Certified-Cloud-Practitioner-certificate.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
+  {
+    id: 'c3',
+    name: 'Lean Six Sigma Black Belt (LSSBB)',
+    issuer: 'CertiProf',
+    file: new URL('../certifications/CertiProf_Lean-Six-Sigma-Black-Belt-Professional-Certification.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
+  {
+    id: 'c4',
+    name: 'Artificial Intelligence Expert (CAIEC®)',
+    issuer: 'CertiProf',
+    file: new URL('../certifications/certiprof_Artificial-Intelligence-Expert.jpeg', import.meta.url).href,
+    fileType: 'image',
+  },
+  {
+    id: 'c5',
+    name: 'Scrum Master Professional Certification (SMPC®)',
+    issuer: 'CertiProf',
+    file: new URL('../certifications/CertiProf_Scrum-Master-Professional-Certification.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
+  {
+    id: 'c6',
+    name: 'Agile Leader Professional Certification (ALPC®)',
+    issuer: 'CertiProf',
+    file: new URL('../certifications/CertiProf_Agile-Leadership-Professional-Certification.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
+  {
+    id: 'c7',
+    name: 'AI for Leaders Professional Certification (AIFL®)',
+    issuer: 'CertiProf',
+    file: new URL('../certifications/CertiProf_AI-for-Leaders-Professional-Certification.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
+  {
+    id: 'c8',
+    name: 'Responsive Web Design, JavaScript Algorithms, Front-End Libraries',
+    issuer: 'freeCodeCamp',
+    file: new URL('../certifications/freeCodeCamp-Developer-Certifications.pdf', import.meta.url).href,
+    fileType: 'pdf',
+  },
 ];
 
 const internships = [
@@ -202,7 +250,7 @@ const internships = [
     company: 'IVoT (Industrial Voice of Things)',
     logo: null,
     role: 'Data Visualization & Product Development Intern',
-    period: 'Recent',
+    period: '2024',
     bullets: [
       'Developed interactive data visualizations for an IoT analytics platform',
       'Contributed to product roadmap planning and feature scoping sessions',
@@ -215,7 +263,7 @@ const internships = [
     company: 'GrowYourBusiness',
     logo: null,
     role: 'Project Management Intern',
-    period: 'Recent',
+    period: '2024',
     bullets: [
       'Coordinated client-facing project timelines, deliverables, and stakeholder updates',
       'Developed workflow documentation and standard operating procedures',
@@ -228,7 +276,7 @@ const internships = [
     company: 'Baby Blossom Market',
     logo: null,
     role: 'Founder',
-    period: 'Recent',
+    period: '2022',
     bullets: [
       'Founded and operated an e-commerce marketplace for baby and children\'s products',
       'Managed vendor sourcing, digital marketing, and customer experience',
@@ -241,7 +289,7 @@ const internships = [
     company: 'BestLogic',
     logo: null,
     role: 'Business Development Intern',
-    period: 'Recent',
+    period: '2023',
     bullets: [
       'Supported new business development, prospecting, and client acquisition efforts',
       'Contributed to proposal writing and competitive market research',
@@ -254,7 +302,7 @@ const internships = [
     company: 'Sparkle Marketing',
     logo: null,
     role: 'Marketing Intern',
-    period: 'Recent',
+    period: '2023',
     bullets: [
       'Assisted with digital marketing campaigns across social media and email channels',
       'Contributed to content creation, copywriting, and performance analytics',
@@ -267,7 +315,7 @@ const internships = [
     company: 'Ezvent',
     logo: null,
     role: 'Startup Intern',
-    period: 'Recent',
+    period: '2023',
     bullets: [
       'Contributed to operations and product development at an early-stage event-tech startup',
       'Assisted with market research, competitive analysis, and go-to-market strategy',

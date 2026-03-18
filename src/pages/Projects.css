@@ -21,7 +21,7 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #3b82f6;
+  background-color: #2563eb;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -70,11 +70,11 @@
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(59, 130, 246, 0.12);
-  border-color: #3b82f6;
+  border-color: #2563eb;
 }
 
 .project-card--flagship {
-  border-color: #3b82f6;
+  border-color: #2563eb;
   background: linear-gradient(to bottom right, #eff6ff, #ffffff);
 }
 
@@ -94,7 +94,7 @@
 }
 
 .flagship-badge {
-  background-color: #3b82f6;
+  background-color: #2563eb;
   color: #ffffff;
   font-size: 0.7rem;
   font-weight: 700;

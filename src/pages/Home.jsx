@@ -63,7 +63,7 @@ function Home() {
             <p className="hero-summary">{profile.heroSummary}</p>
             <div className="hero-cta">
               <Link to="/projects" className="btn btn-primary">View Projects</Link>
-              <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="btn btn-outline">
+              <a href={profile.resumePdf} download="Zane_Graper_Resume.pdf" className="btn btn-outline">
                 Download Resume
               </a>
             </div>

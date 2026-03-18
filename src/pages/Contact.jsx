@@ -16,16 +16,22 @@ const contactItems = [
     href: profile.linkedin,
   },
   {
-    label: 'Location',
-    icon: '📍',
-    value: profile.location,
-    href: null,
+    label: 'Credly',
+    icon: '🏅',
+    value: 'credly.com/users/zgraper',
+    href: profile.credly,
   },
   {
     label: 'GitHub',
     icon: '💻',
     value: 'github.com/zgraper',
     href: profile.github,
+  },
+  {
+    label: 'Location',
+    icon: '📍',
+    value: profile.location,
+    href: null,
   },
 ];
 

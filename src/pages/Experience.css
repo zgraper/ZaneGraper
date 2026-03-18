@@ -21,7 +21,7 @@
   display: block;
   width: 48px;
   height: 3px;
-  background-color: #3b82f6;
+  background-color: #2563eb;
   margin: 0.5rem auto 0;
   border-radius: 2px;
 }
@@ -69,7 +69,7 @@
   top: 4px;
   width: 16px;
   height: 16px;
-  background-color: #3b82f6;
+  background-color: #2563eb;
   border: 2px solid #ffffff;
   border-radius: 50%;
   flex-shrink: 0;
@@ -216,39 +216,118 @@
 }
 
 /* Certifications */
-.cert-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.cert-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.cert-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 6px 16px rgba(30, 58, 138, 0.1);
+  transform: translateY(-3px);
+}
+
+.cert-card-body {
+  display: flex;
+  align-items: flex-start;
   gap: 0.75rem;
 }
 
-.cert-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 0.85rem 1rem;
-  color: #334155;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.cert-item:hover {
-  border-color: #bfdbfe;
-  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
-}
-
 .cert-icon {
-  color: #3b82f6;
-  font-size: 0.85rem;
+  color: #2563eb;
+  font-size: 1rem;
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+.cert-card-info {
+  flex: 1;
+}
+
+.cert-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.2rem;
+  line-height: 1.4;
+}
+
+.cert-issuer {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.cert-view-btn {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background-color: #eff6ff;
+  color: #0f2460;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s, border-color 0.2s;
+  align-self: flex-start;
+}
+
+.cert-view-btn:hover {
+  background-color: #dbeafe;
+  border-color: #2563eb;
+}
+
+/* Mensa aside */
+.mensa-aside {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.07);
+}
+
+.mensa-badge {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.mensa-text {
+  flex: 1;
+}
+
+.mensa-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+}
+
+.mensa-description {
+  font-size: 0.875rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
 }
 
 /* Responsive */
@@ -266,7 +345,13 @@
     grid-template-columns: 1fr;
   }
 
-  .cert-list {
+  .cert-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mensa-aside {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

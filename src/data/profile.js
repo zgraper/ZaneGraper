@@ -8,6 +8,7 @@ const profile = {
   email: 'zgraper@gmail.com',
   linkedin: 'https://linkedin.com/in/zanegraper',
   github: 'https://github.com/zgraper',
+  credly: 'https://www.credly.com/users/zgraper',
   portfolio: 'https://bit.ly/zgraper',
   resumePdf: `${import.meta.env.BASE_URL}Zane_Graper_Resume_gen.pdf`,
   summary:
