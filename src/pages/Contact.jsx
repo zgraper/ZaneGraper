@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import profile from '../data/profile';
 import './Contact.css';
 
@@ -29,6 +30,36 @@ const contactItems = [
 ];
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('idle'); // 'idle' | 'sending' | 'success' | 'error'
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/zgraper@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (res.ok) {
+        setStatus('success');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <main className="contact-page">
       <div className="page-header">
@@ -64,28 +95,50 @@ function Contact() {
         </div>
 
         {/* Message form */}
-        <form
-          className="contact-form"
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert('Thanks for your message! (Demo only — no backend connected)');
-            e.target.reset();
-          }}
-        >
+        <form className="contact-form" onSubmit={handleSubmit}>
           <h2 className="form-title">Send a Message</h2>
           <div className="form-group">
             <label htmlFor="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" required />
+            <input
+              id="name"
+              type="text"
+              placeholder="Your name"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
-            <input id="email" type="email" placeholder="your@email.com" required />
+            <input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>
-            <textarea id="message" rows={5} placeholder="Your message..." required />
+            <textarea
+              id="message"
+              rows={5}
+              placeholder="Your message..."
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
           </div>
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending…' : 'Send Message'}
+          </button>
+          {status === 'success' && (
+            <p className="form-feedback form-success">Message sent! I&apos;ll be in touch soon.</p>
+          )}
+          {status === 'error' && (
+            <p className="form-feedback form-error">Something went wrong. Please try again or email directly.</p>
+          )}
         </form>
       </div>
     </main>

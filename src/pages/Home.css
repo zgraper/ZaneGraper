@@ -5,18 +5,25 @@
 /* Hero */
 .hero {
   background: linear-gradient(135deg, #e8f0fe 0%, #dbeafe 60%, #bfdbfe 100%);
-  padding: 5rem 2rem 4rem;
-  text-align: center;
+  padding: 5rem 2rem 0;
   border-bottom: 1px solid #bfdbfe;
 }
 
-.hero-content {
-  max-width: 760px;
+.hero-inner {
+  max-width: 1100px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: flex-end;
+}
+
+.hero-content {
+  padding-bottom: 4rem;
 }
 
 .hero-eyebrow {
-  color: #1e3a8a;
+  color: #0f2460;
   font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -47,8 +54,29 @@
 .hero-cta {
   display: flex;
   gap: 1rem;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+/* Photo tile */
+.hero-photo-wrap {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.hero-photo-tile {
+  background: #ffffff;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(15, 36, 96, 0.18);
+  line-height: 0;
+}
+
+.hero-photo {
+  display: block;
+  width: 280px;
+  height: auto;
+  object-fit: cover;
 }
 
 /* Buttons */
@@ -65,25 +93,25 @@
 }
 
 .btn-primary {
-  background-color: #1e3a8a;
+  background-color: #0f2460;
   color: #ffffff;
-  box-shadow: 0 2px 6px rgba(30, 58, 138, 0.3);
+  box-shadow: 0 2px 6px rgba(15, 36, 96, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: #1a2f73;
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.35);
+  background-color: #0a1845;
+  box-shadow: 0 4px 12px rgba(15, 36, 96, 0.35);
   transform: translateY(-1px);
 }
 
 .btn-outline {
-  border: 2px solid #1e3a8a;
-  color: #1e3a8a;
+  border: 2px solid #0f2460;
+  color: #0f2460;
   background: transparent;
 }
 
 .btn-outline:hover {
-  background-color: #1e3a8a;
+  background-color: #0f2460;
   color: #ffffff;
   transform: translateY(-1px);
 }
@@ -144,29 +172,30 @@
 
 .exp-peek-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 0.85rem 1.25rem;
+  padding: 1rem 1.25rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .exp-peek-item:hover {
-  border-color: #1e3a8a;
-  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.08);
+  border-color: #0f2460;
+  box-shadow: 0 4px 12px rgba(15, 36, 96, 0.08);
 }
 
 .exp-peek-logo {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   border-radius: 6px;
   border: 1px solid #e2e8f0;
   background-color: #ffffff;
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .exp-peek-info {
@@ -183,8 +212,15 @@
 
 .exp-peek-company {
   font-size: 0.85rem;
-  color: #1e3a8a;
+  color: #0f2460;
+  margin: 0 0 0.35rem;
+}
+
+.exp-peek-desc {
+  font-size: 0.82rem;
+  color: #64748b;
   margin: 0;
+  line-height: 1.5;
 }
 
 .exp-peek-period {
@@ -192,6 +228,7 @@
   color: #94a3b8;
   white-space: nowrap;
   flex-shrink: 0;
+  padding-top: 2px;
 }
 
 .featured-grid {
@@ -214,8 +251,8 @@
 
 .feat-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(30, 58, 138, 0.12);
-  border-color: #1e3a8a;
+  box-shadow: 0 12px 28px rgba(15, 36, 96, 0.12);
+  border-color: #0f2460;
 }
 
 .feat-card-header {
@@ -264,7 +301,7 @@
 
 .tag {
   background-color: #eff6ff;
-  color: #1e3a8a;
+  color: #0f2460;
   font-size: 0.75rem;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
@@ -336,9 +373,39 @@
 }
 
 /* Responsive */
+@media (max-width: 860px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-photo-wrap {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-photo-tile {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .hero-photo {
+    width: 220px;
+  }
+}
+
 @media (max-width: 640px) {
   .hero {
-    padding: 3rem 1.5rem 2.5rem;
+    padding: 3rem 1.5rem 0;
   }
 
   .section {
@@ -360,7 +427,7 @@
 
   .exp-peek-period {
     width: 100%;
-    margin-left: calc(40px + 1rem);
+    margin-left: calc(44px + 1rem);
   }
 
   .featured-grid {

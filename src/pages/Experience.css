@@ -39,7 +39,7 @@
 .exp-section-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #0f2460;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
@@ -114,7 +114,7 @@
 
 .job-company {
   font-size: 0.9rem;
-  color: #1e3a8a;
+  color: #0f2460;
   margin: 0;
 }
 
@@ -148,7 +148,7 @@
 
 .tool-tag {
   background-color: #eff6ff;
-  color: #1e3a8a;
+  color: #0f2460;
   font-size: 0.75rem;
   padding: 0.2rem 0.55rem;
   border-radius: 4px;
@@ -197,7 +197,7 @@
 
 .edu-school {
   font-size: 0.9rem;
-  color: #1e3a8a;
+  color: #0f2460;
   margin: 0 0 0.25rem;
 }
 
