@@ -1,4 +1,4 @@
-import { experience, education, certifications } from '../data/experience';
+import { experience, education, certifications, internships } from '../data/experience';
 import './Experience.css';
 
 function Experience() {
@@ -86,6 +86,46 @@ function Experience() {
             </li>
           ))}
         </ul>
+      </section>
+
+      {/* Internships & Other */}
+      <section className="exp-section">
+        <h2 className="exp-section-title">Internships &amp; Other</h2>
+        <div className="timeline">
+          {internships.map((job) => (
+            <div key={job.id} className="timeline-item">
+              <div className="timeline-dot" />
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <div className="timeline-header-left">
+                    {job.logo && (
+                      <img
+                        src={job.logo}
+                        alt={`${job.company} logo`}
+                        className="company-logo"
+                      />
+                    )}
+                    <div>
+                      <h3 className="job-role">{job.role}</h3>
+                      <p className="job-company">{job.company}</p>
+                    </div>
+                  </div>
+                  <span className="job-period">{job.period}</span>
+                </div>
+                <ul className="job-bullets">
+                  {job.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+                <div className="job-tools">
+                  {job.tools.map((tool) => (
+                    <span key={tool} className="tool-tag">{tool}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

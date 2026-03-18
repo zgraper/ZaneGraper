@@ -15,13 +15,13 @@
 .brand-link {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #0f2460;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
 
 .brand-link:hover {
-  color: #1a2f73;
+  color: #0a1845;
 }
 
 .navbar-links {
@@ -45,21 +45,21 @@
 
 .navbar-links a:hover,
 .navbar-links a.active {
-  color: #1e3a8a;
-  border-bottom-color: #1e3a8a;
+  color: #0f2460;
+  border-bottom-color: #0f2460;
 }
 
 .navbar-links .resume-link {
-  color: #1e3a8a;
+  color: #0f2460;
   font-weight: 600;
-  border: 1.5px solid #1e3a8a;
+  border: 1.5px solid #0f2460;
   border-radius: 5px;
   padding: 0.3rem 0.8rem;
   transition: background-color 0.2s, color 0.2s;
 }
 
 .navbar-links .resume-link:hover {
-  background-color: #1e3a8a;
+  background-color: #0f2460;
   color: #ffffff;
   border-bottom-color: transparent;
 }
@@ -136,20 +136,20 @@
   .navbar-links a:hover,
   .navbar-links a.active {
     background-color: #eff6ff;
-    color: #1e3a8a;
+    color: #0f2460;
     border-bottom-color: transparent;
   }
 
   .navbar-links .resume-link {
     margin: 0.5rem 2rem 0;
     text-align: center;
-    border: 1.5px solid #1e3a8a;
+    border: 1.5px solid #0f2460;
     border-radius: 5px;
     padding: 0.5rem 1rem;
   }
 
   .navbar-links .resume-link:hover {
-    background-color: #1e3a8a;
+    background-color: #0f2460;
     color: #ffffff;
   }
 }

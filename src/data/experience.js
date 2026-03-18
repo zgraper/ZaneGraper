@@ -1,3 +1,52 @@
+/* Highlights shown in the Experience Snapshot on the homepage */
+const homeHighlights = [
+  {
+    id: 'h1',
+    logo: new URL('../logo-images/cornbelt-ai-logo.png', import.meta.url).href,
+    role: 'Founder & Technical Lead',
+    company: 'CornBelt AI',
+    period: '2025–Present',
+    description:
+      'Deployed a RAG-powered agronomy advisory platform on AWS serverless infrastructure for corn and soybean producers.',
+  },
+  {
+    id: 'h2',
+    logo: new URL('../logo-images/asymmetrica-investments-logo.jpeg', import.meta.url).href,
+    role: 'AI Engineer & Project Manager',
+    company: 'Asymmetrica Investments AG',
+    period: '2024–2025',
+    description:
+      'Scaled AI-driven lead pipelines 12× with CrewAI agents and led the Agri-Xchange blockchain trading platform MVP.',
+  },
+  {
+    id: 'h3',
+    logo: new URL('../logo-images/university-of-the-cumberlands-logo.jpeg', import.meta.url).href,
+    role: 'Master of Science – Artificial Intelligence',
+    company: 'University of the Cumberlands',
+    period: 'Expected Dec 2025',
+    description:
+      'GPA 3.9 · Deep Learning, NLP, Generative AI with LLMs, and AI in Risk Management.',
+  },
+  {
+    id: 'h4',
+    logo: new URL('../logo-images/university-of-southern-indiana-logo.jpeg', import.meta.url).href,
+    role: 'MBA – Project Management',
+    company: 'University of Southern Indiana',
+    period: '2023',
+    description:
+      'GPA 4.0 (Full Honors) · Strategic Management, Financial Decision-Making, and Operations.',
+  },
+  {
+    id: 'h5',
+    logo: new URL('../logo-images/azteca-milling-logo.jpg', import.meta.url).href,
+    role: 'Operations Manager',
+    company: 'Azteca Milling LP',
+    period: '2017–2022',
+    description:
+      'Managed $6M procurement budget and led a 25+ person cross-functional team with Lean Six Sigma improvements.',
+  },
+];
+
 const experience = [
   {
     id: 1,
@@ -118,6 +167,22 @@ const education = [
       'Undergraduate Research Assistant',
     ],
   },
+  {
+    id: 4,
+    degree: 'Master of Science – Financial Engineering',
+    school: 'WorldQuant University',
+    logo: new URL('../logo-images/worldquant-logo.png', import.meta.url).href,
+    location: 'Online',
+    period: 'Expected May 2026',
+    gpa: null,
+    highlights: [
+      'Financial Mathematics & Modeling',
+      'Derivatives Pricing',
+      'Risk Management',
+      'Algorithmic Trading Strategies',
+      'Data-Driven Portfolio Construction',
+    ],
+  },
 ];
 
 const certifications = [
@@ -131,4 +196,85 @@ const certifications = [
   'Responsive Web Design, JavaScript Algorithms, Front-End Libraries (freeCodeCamp)',
 ];
 
-export { experience, education, certifications };
+const internships = [
+  {
+    id: 'i1',
+    company: 'IVoT (Industrial Voice of Things)',
+    logo: null,
+    role: 'Data Visualization & Product Development Intern',
+    period: 'Recent',
+    bullets: [
+      'Developed interactive data visualizations for an IoT analytics platform',
+      'Contributed to product roadmap planning and feature scoping sessions',
+      'Collaborated with engineering teams to improve dashboard UX and data pipelines',
+    ],
+    tools: ['Data Visualization', 'Product Development', 'IoT'],
+  },
+  {
+    id: 'i2',
+    company: 'GrowYourBusiness',
+    logo: null,
+    role: 'Project Management Intern',
+    period: 'Recent',
+    bullets: [
+      'Coordinated client-facing project timelines, deliverables, and stakeholder updates',
+      'Developed workflow documentation and standard operating procedures',
+      'Supported agile sprint planning and retrospective facilitation',
+    ],
+    tools: ['Project Management', 'Agile', 'Process Documentation'],
+  },
+  {
+    id: 'i3',
+    company: 'Baby Blossom Market',
+    logo: null,
+    role: 'Founder',
+    period: 'Recent',
+    bullets: [
+      'Founded and operated an e-commerce marketplace for baby and children\'s products',
+      'Managed vendor sourcing, digital marketing, and customer experience',
+      'Built and scaled the platform from concept to operational launch',
+    ],
+    tools: ['E-Commerce', 'Digital Marketing', 'Entrepreneurship'],
+  },
+  {
+    id: 'i4',
+    company: 'BestLogic',
+    logo: null,
+    role: 'Business Development Intern',
+    period: 'Recent',
+    bullets: [
+      'Supported new business development, prospecting, and client acquisition efforts',
+      'Contributed to proposal writing and competitive market research',
+      'Assisted in CRM management and pipeline tracking',
+    ],
+    tools: ['Business Development', 'CRM', 'Market Research'],
+  },
+  {
+    id: 'i5',
+    company: 'Sparkle Marketing',
+    logo: null,
+    role: 'Marketing Intern',
+    period: 'Recent',
+    bullets: [
+      'Assisted with digital marketing campaigns across social media and email channels',
+      'Contributed to content creation, copywriting, and performance analytics',
+      'Helped develop brand strategy and audience engagement initiatives',
+    ],
+    tools: ['Digital Marketing', 'Content Creation', 'Analytics'],
+  },
+  {
+    id: 'i6',
+    company: 'Ezvent',
+    logo: null,
+    role: 'Startup Intern',
+    period: 'Recent',
+    bullets: [
+      'Contributed to operations and product development at an early-stage event-tech startup',
+      'Assisted with market research, competitive analysis, and go-to-market strategy',
+      'Supported team efforts in investor outreach and pitch preparation',
+    ],
+    tools: ['Startup Operations', 'Market Research', 'Product Strategy'],
+  },
+];
+
+export { experience, education, certifications, homeHighlights, internships };

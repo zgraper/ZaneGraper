@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import profile from '../data/profile';
 import projects from '../data/projects';
-import { experience } from '../data/experience';
+import { homeHighlights } from '../data/experience';
+import zanePhoto from '../logo-images/zane-photo.jpg';
 import './Home.css';
 
 const focusAreas = [
@@ -35,43 +36,61 @@ const focusAreas = [
     title: 'Agriculture',
     description: 'Deep expertise in agronomy, grain supply chains, food processing, and ag-tech innovation.',
   },
+  {
+    icon: '🎯',
+    title: 'Lean Six Sigma',
+    description: 'Black Belt–certified process improvement practitioner driving measurable efficiency and quality gains.',
+  },
+  {
+    icon: '👥',
+    title: 'Leadership & Management',
+    description: 'Proven track record leading cross-functional teams, managing multimillion-dollar budgets, and delivering results.',
+  },
 ];
 
-const featuredProjects = projects.slice(0, 4);
+const featuredProjects = projects.filter((p) => p.id !== 4).slice(0, 3);
 
 function Home() {
   return (
     <main className="home">
       {/* Hero */}
       <section className="hero">
-        <div className="hero-content">
-          <p className="hero-eyebrow">Hello, I&apos;m</p>
-          <h1 className="hero-name">{profile.name}</h1>
-          <p className="hero-tagline">{profile.tagline}</p>
-          <p className="hero-summary">{profile.heroSummary}</p>
-          <div className="hero-cta">
-            <Link to="/projects" className="btn btn-primary">View Projects</Link>
-            <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="btn btn-outline">
-              Download Resume
-            </a>
+        <div className="hero-inner">
+          <div className="hero-content">
+            <p className="hero-eyebrow">Hello, I&apos;m</p>
+            <h1 className="hero-name">{profile.name}</h1>
+            <p className="hero-tagline">{profile.tagline}</p>
+            <p className="hero-summary">{profile.heroSummary}</p>
+            <div className="hero-cta">
+              <Link to="/projects" className="btn btn-primary">View Projects</Link>
+              <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="btn btn-outline">
+                Download Resume
+              </a>
+            </div>
+          </div>
+          <div className="hero-photo-wrap">
+            <div className="hero-photo-tile">
+              <img src={zanePhoto} alt="Zane Graper" className="hero-photo" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Experience Quick Peek */}
       <section className="section experience-peek-section">
-        <h2 className="section-title">Experience Highlights</h2>
+        <h2 className="section-title">Experience Snapshot</h2>
         <div className="exp-peek-list">
-          {experience.map((job) => (
-            <div key={job.id} className="exp-peek-item">
-              {job.logo && (
-                <img src={job.logo} alt={`${job.company} logo`} className="exp-peek-logo" />
+          {homeHighlights.map((item) => (
+            <div key={item.id} className="exp-peek-item">
+              {item.logo && (
+                <img src={item.logo} alt={`${item.company} logo`} className="exp-peek-logo" />
               )}
               <div className="exp-peek-info">
-                <p className="exp-peek-role">{job.role}</p>
-                <p className="exp-peek-company">{job.company}</p>
+                <p className="exp-peek-role">{item.role}</p>
+                <p className="exp-peek-company">{item.company}</p>
+                <p className="exp-peek-desc">{item.description}</p>
               </div>
-              <span className="exp-peek-period">{job.period}</span>
+              <span className="exp-peek-period">{item.period}</span>
             </div>
           ))}
         </div>
