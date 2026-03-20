@@ -165,21 +165,21 @@
 .exp-peek-list {
   max-width: 1100px;
   margin: 0 auto 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
 }
 
 .exp-peek-item {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .exp-peek-item:hover {
@@ -189,47 +189,48 @@
 }
 
 .exp-peek-logo {
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #e2e8f0;
   background-color: #ffffff;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-bottom: 0.85rem;
 }
 
 .exp-peek-info {
   flex: 1;
   min-width: 0;
+  margin-bottom: 0.75rem;
 }
 
 .exp-peek-role {
   font-size: 0.95rem;
   font-weight: 600;
   color: #0f172a;
-  margin: 0 0 0.1rem;
+  margin: 0 0 0.15rem;
 }
 
 .exp-peek-company {
   font-size: 0.85rem;
   color: #0f2460;
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.4rem;
 }
 
 .exp-peek-desc {
   font-size: 0.82rem;
   color: #64748b;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .exp-peek-period {
   font-size: 0.8rem;
   color: #94a3b8;
-  white-space: nowrap;
-  flex-shrink: 0;
-  padding-top: 2px;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+  margin-top: auto;
 }
 
 .featured-grid {
@@ -421,14 +422,8 @@
     padding: 3rem 1.5rem;
   }
 
-  .exp-peek-item {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .exp-peek-period {
-    width: 100%;
-    margin-left: calc(44px + 1rem);
+  .exp-peek-list {
+    grid-template-columns: 1fr;
   }
 
   .featured-grid {
@@ -437,5 +432,27 @@
 
   .focus-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    padding: 2.5rem 1rem 0;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .focus-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .experience-peek-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero-photo {
+    width: 180px;
   }
 }

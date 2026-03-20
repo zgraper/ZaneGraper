@@ -355,3 +355,18 @@
     text-align: center;
   }
 }
+
+@media (max-width: 400px) {
+  .experience-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .timeline {
+    margin-left: 0.25rem;
+  }
+
+  .job-bullets,
+  .edu-highlights {
+    padding-left: 1rem;
+  }
+}

@@ -163,3 +163,9 @@
     color: #ffffff;
   }
 }
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+}
