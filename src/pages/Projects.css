@@ -186,3 +186,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 400px) {
+  .projects-page {
+    padding: 2rem 1rem 3rem;
+  }
+}
